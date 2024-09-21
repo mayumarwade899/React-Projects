@@ -17,6 +17,8 @@ import WeatherAPI from "./components/WeatherAPI";
 import "./index.css"
 
 function App() {
+const items = ['Item 1','Item 2','Item 3','Another Item','Another Item 2'];
+
   return (
     <div className="App">
       {/* <Axios/> */}
@@ -34,7 +36,7 @@ function App() {
       {/* <FileUploader /> */}
       {/* <AuthenticateForm /> */}
       {/* <WeatherAPI /> */}
-      <SearchItems />
+      <SearchItems items={items}/>
     </div>
   );
 }
