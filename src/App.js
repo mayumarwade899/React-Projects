@@ -7,9 +7,10 @@ import CRUD from "./components/CRUD";
 import DisplayList from "./components/DisplayList";
 import FetchData from "./components/FetchData";
 import FileUploader from "./components/FileUploader";
+import Pagination from "./components/Pagination";
 import RandomQuote from "./components/RandomQuote";
 import SearchItems from "./components/SearchItems";
-// import Main from "./components/Routing/Main";
+import Main from "./components/Routing/Main";
 import Timer from "./components/Timer";
 import ToggleSwitch from "./components/ToggleSwitch";
 import UserInput from "./components/UserInput";
@@ -17,7 +18,7 @@ import WeatherAPI from "./components/WeatherAPI";
 import "./index.css"
 
 function App() {
-const items = ['Item 1','Item 2','Item 3','Another Item','Another Item 2'];
+const items = ['Item 1','Item 2','Item 3','Another Item 1','Another Item 2','Another Item 2'];
 
   return (
     <div className="App">
@@ -36,7 +37,8 @@ const items = ['Item 1','Item 2','Item 3','Another Item','Another Item 2'];
       {/* <FileUploader /> */}
       {/* <AuthenticateForm /> */}
       {/* <WeatherAPI /> */}
-      <SearchItems items={items}/>
+      {/* <SearchItems items={items}/> */}
+      <Pagination items={items} itemsPerPage={2}/>
     </div>
   );
 }
