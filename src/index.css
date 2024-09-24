@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+* {
+  margin: 5px;
+}
+
 .counter {
   display: flex;
   flex-direction: column;

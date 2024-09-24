@@ -17,6 +17,7 @@ import UserInput from "./components/UserInput";
 import WeatherAPI from "./components/WeatherAPI";
 import "./index.css"
 import ColorPicker from "./components/ColorPicker";
+import ResponsiveMenu from "./components/ResponsiveMenu";
 
 function App() {
 const items = ['Item 1','Item 2','Item 3','Another Item 1','Another Item 2','Another Item 2'];
@@ -41,6 +42,7 @@ const items = ['Item 1','Item 2','Item 3','Another Item 1','Another Item 2','Ano
       {/* <SearchItems items={items}/> */}
       {/* <Pagination items={items} itemsPerPage={2}/> */}
       {/* <ColorPicker /> */}
+      <ResponsiveMenu />
     </div>
   );
 }
