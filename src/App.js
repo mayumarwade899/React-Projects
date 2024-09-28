@@ -15,12 +15,22 @@ import Timer from "./components/Timer";
 import ToggleSwitch from "./components/ToggleSwitch";
 import UserInput from "./components/UserInput";
 import WeatherAPI from "./components/WeatherAPI";
-import "./index.css"
+import "./index.css";
 import ColorPicker from "./components/ColorPicker";
 import ResponsiveMenu from "./components/ResponsiveMenu";
+import LightDarkTheme from "./components/LightDarkTheme/LightDarkTheme";
+import ThemeComp from "./components/LightDarkTheme/ThemeComp";
+import { ThemeProvider } from "./components/LightDarkTheme/Context";
 
 function App() {
-const items = ['Item 1','Item 2','Item 3','Another Item 1','Another Item 2','Another Item 2'];
+  // const items = [
+  //   "Item 1",
+  //   "Item 2",
+  //   "Item 3",
+  //   "Another Item 1",
+  //   "Another Item 2",
+  //   "Another Item 2",
+  // ];
 
   return (
     <div className="App">
@@ -42,7 +52,13 @@ const items = ['Item 1','Item 2','Item 3','Another Item 1','Another Item 2','Ano
       {/* <SearchItems items={items}/> */}
       {/* <Pagination items={items} itemsPerPage={2}/> */}
       {/* <ColorPicker /> */}
-      <ResponsiveMenu />
+      {/* <ResponsiveMenu /> */}
+      <ThemeProvider>
+        <div className="App">
+          <LightDarkTheme />
+          <ThemeComp />
+        </div>
+      </ThemeProvider>
     </div>
   );
 }
