@@ -21,6 +21,8 @@ import ResponsiveMenu from "./components/ResponsiveMenu";
 import LightDarkTheme from "./components/LightDarkTheme/LightDarkTheme";
 import ThemeComp from "./components/LightDarkTheme/ThemeComp";
 import { ThemeProvider } from "./components/LightDarkTheme/Context";
+import AddToCart from "./components/AddToCart/AddToCart";
+import { CartProvider } from "./components/AddToCart/CartContext";
 
 function App() {
   // const items = [
@@ -53,12 +55,15 @@ function App() {
       {/* <Pagination items={items} itemsPerPage={2}/> */}
       {/* <ColorPicker /> */}
       {/* <ResponsiveMenu /> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <div className="App">
           <LightDarkTheme />
           <ThemeComp />
         </div>
-      </ThemeProvider>
+      </ThemeProvider> */}
+      <CartProvider>
+      <AddToCart />
+      </CartProvider>
     </div>
   );
 }
