@@ -24,6 +24,7 @@ import { ThemeProvider } from "./components/LightDarkTheme/Context";
 import AddToCart from "./components/AddToCart/AddToCart";
 import { CartProvider } from "./components/AddToCart/CartContext";
 import MultipleAPIs from "./components/MultipleAPIs";
+import MultipleStates from "./components/MultipleStates";
 
 function App() {
   // const items = [
@@ -65,7 +66,8 @@ function App() {
       {/* <CartProvider>
       <AddToCart />
       </CartProvider> */}
-      <MultipleAPIs />
+      {/* <MultipleAPIs /> */}
+      <MultipleStates />
     </div>
   );
 }
