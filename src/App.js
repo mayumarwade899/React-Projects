@@ -23,6 +23,7 @@ import ThemeComp from "./components/LightDarkTheme/ThemeComp";
 import { ThemeProvider } from "./components/LightDarkTheme/Context";
 import AddToCart from "./components/AddToCart/AddToCart";
 import { CartProvider } from "./components/AddToCart/CartContext";
+import MultipleAPIs from "./components/MultipleAPIs";
 
 function App() {
   // const items = [
@@ -61,9 +62,10 @@ function App() {
           <ThemeComp />
         </div>
       </ThemeProvider> */}
-      <CartProvider>
+      {/* <CartProvider>
       <AddToCart />
-      </CartProvider>
+      </CartProvider> */}
+      <MultipleAPIs />
     </div>
   );
 }
